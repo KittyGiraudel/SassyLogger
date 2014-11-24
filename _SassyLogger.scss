@@ -118,6 +118,10 @@
   $logger-configuration: map-merge($logger-configuration, ("history": $logger-history)) !global;
 }
 
+
+
+
+
 /// Print logger history
 /// @requires logger-conf
 /// @output A `logger-logs` block
@@ -134,6 +138,10 @@
     }
   }
 }
+
+
+
+
 
 /// Print some extra informations about logger levels and what they mean
 /// @output A `logger-help` block
