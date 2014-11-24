@@ -13,7 +13,6 @@ Current implementation provides:
 - a friendly API with easy-to-use functions;
 - a helper to learn more about different levels of logging.
 
-*Note: SassMeister doesn't show `@warn` but this code
-would print content in the console in a regular environment.*
+Find a proof of concept on [SassMeister](http://sassmeister.com/gist/9353f7e875a01502313e). Although note that SassMeister doesn't show `@warn` but this code would print content in the console in a regular environment.
  
 Feel free to do whatever you want with this.
