@@ -1,0 +1,23 @@
+@import "SassyLogger";
+
+// Instanciate a new logger,
+// with "INFO" as the minimum level for logging.
+// You can pass extra arguments as well.
+// If you don't instanciate it yourself,
+// it will be done automatically on first log.
+@include logger("INFO");
+
+// Logger help (optional, obviously)
+@include logger-help;
+
+// Log stuff
+@include INFO("Hey, look at that.");
+@include INFO("Bring in the unicorns!");
+@include WARN("Dude, pay attention.");
+
+// This one is not printed in the console but still tracked in logs.
+@include DEBUG("Debug and stuff."); 
+
+// Output history (optional),
+// especially useful for debugging.
+@include logger-print-logs;
