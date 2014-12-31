@@ -1,0 +1,24 @@
+{
+  "title": "SassyLogger",
+  "name": "SassyLogger",
+  "version": "0.1.0",
+  "description": "A powerful logger to handle error and warning messages in Sass.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HugoGiraudel/SassyLogger"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "log",
+    "error",
+    "warning",
+    "css"
+  ],
+  "author": "Hugo Giraudel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HugoGiraudel/SassyLogger/issues"
+  },
+  "homepage": "https://github.com/HugoGiraudel/SassyLogger"
+}
