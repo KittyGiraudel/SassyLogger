@@ -1,0 +1,1483 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+
+<title>SassyLogger - v0.1.0</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+
+<!-- Thanks to Sass-lang.com for the icons -->
+<link href="http://sass-lang.com/favicon.ico" rel="shortcut icon">
+
+</head>
+<body>
+
+  
+  <aside class="sidebar" role="nav">
+    
+  <div class="sidebar__header">
+  <h1 class="sidebar__title">
+    
+      <a href="https://github.com/HugoGiraudel/SassyLogger">SassyLogger - v0.1.0</a>
+    
+  </h1>
+</div>
+
+<div class="sidebar__body">
+  
+  
+    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+
+    
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="logger-conf" data-type="function">
+              <a href="#function-logger-conf">logger-conf
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="logger" data-type="mixin">
+              <a href="#mixin-logger">logger
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="log" data-type="mixin">
+              <a href="#mixin-log">log
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="logger-update-history" data-type="mixin">
+              <a href="#mixin-logger-update-history">logger-update-history
+              <span class="sidebar__annotation  sidebar__annotation--private">private</span>
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="logger-print-logs" data-type="mixin">
+              <a href="#mixin-logger-print-logs">logger-print-logs
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="logger-help" data-type="mixin">
+              <a href="#mixin-logger-help">logger-help
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+  
+</div>
+
+
+  </aside>
+
+  
+  <article class="main" role="main">
+
+    
+    <header class="header" role="banner">
+  <div class="container">
+  
+    <div class="header__description">
+      <p>A powerful logger to handle error and warning messages in Sass.</p>
+
+    </div>
+  
+
+    <div class="sassdoc__searchbar  searchbar">
+       <label for="js-search-input" class="visually-hidden">Search</label>
+       <div class="searchbar__form" id="js-search">
+         <input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search" />
+         <ul class="searchbar__suggestions" id="js-search-suggestions"></ul>
+       </div>
+     </div>
+  </div>
+</header>
+
+
+    <div class="container">
+    
+
+  
+  
+
+    
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="undefined">General</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="undefined-function">
+              <h2 class="main__heading--secondary">functions</h2>
+
+              
+              
+                <section class="main__item  item" id="function-logger-conf">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-logger-conf">logger-conf</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function logger-conf($key) { 
+  @return map-get($logger-configuration, $key);
+ }"
+    data-collapsed="@function logger-conf($key) { ... }"><code>@function logger-conf($key) { ... }</code></pre>
+
+  
+    <a href="https://github.com/HugoGiraudel/SassyLogger/tree/master/sass/_SassyLogger.scss#L40-L42" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Helper to get a key from <code>$logger-configuration</code> map.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$key</code></th>
+          <td data-label="desc"><p>Option to get from map</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>Option from <code>$logger-configuration</code> or <code>null</code> if <code>$key</code> doesn&#39;t exist.</p>
+
+  
+    Any
+  
+  </p>
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Get history from configuration map</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss">$history: logger-conf(&quot;history&quot;);</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-logger"><code>logger</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><a href="#mixin-log"><code>log</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><a href="#mixin-logger-update-history"><code>logger-update-history</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><a href="#mixin-logger-print-logs"><code>logger-print-logs</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="undefined-mixin">
+              <h2 class="main__heading--secondary">mixins</h2>
+
+              
+              
+                <section class="main__item  item" id="mixin-logger">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-logger">logger</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin logger($minimum-level) { 
+  // Create global variable
+  $logger-configuration: (
+    &quot;levels&quot;  : &quot;DEBUG&quot; &quot;INFO&quot; &quot;WARN&quot; &quot;ERROR&quot; &quot;FATAL&quot;,
+    &quot;errors&quot;  : &quot;FATAL&quot; &quot;ERROR&quot;,
+    &quot;min&quot;     : $minimum-level,
+    &quot;history&quot; : (
+      &quot;DEBUG&quot; : (),
+      &quot;INFO&quot;  : (),
+      &quot;WARN&quot;  : (),
+      &quot;ERROR&quot; : (),
+      &quot;FATAL&quot; : ()
+    )
+  ) !global;
+
+  // Cache &quot;min-level&quot; in the global map to improve performance
+  $logger-configuration: map-merge($logger-configuration,
+    (&quot;min-level&quot;: index(logger-conf(&quot;levels&quot;), logger-conf(&quot;min&quot;)))
+  ) !global;
+ }"
+    data-collapsed="@mixin logger($minimum-level) { ... }"><code>@mixin logger($minimum-level) { ... }</code></pre>
+
+  
+    <a href="https://github.com/HugoGiraudel/SassyLogger/tree/master/sass/_SassyLogger.scss#L8-L27" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Instanciate a logger.
+This should be called once only.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$minimum-level</code></th>
+          <td data-label="desc"><p>Level at which the logger starts printing. Use <code>OFF</code> to disable.</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Instanciate a new logger logging INFO and up.</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss"> @include logger(&quot;INFO&quot;);</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#function-logger-conf"><code>logger-conf</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-log"><code>log</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-log">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#mixin-log">log</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin log($level, $message) { 
+  // If no logger has been instanciated, create one
+  @if not global-variable-exists(&quot;logger-configuration&quot;) {
+    @include logger(&quot;INFO&quot;);
+  }
+
+  $level: to-upper-case($level);
+
+  // Unless it&#39;s disabled, proceed
+  @if $level != &quot;OFF&quot; {
+    // Get current level&#39;s index
+    $index-current-level: index(logger-conf(&quot;levels&quot;), $level);
+
+    // If `$level` is invalid, falls back on `INFO`
+    @if not $index-current-level { $level: &quot;INFO&quot; }
+
+    // Update logger history
+    @include logger-update-history($level, $message);
+
+    // Finally, print message in console if current level is over minimum level
+    @if $index-current-level &gt;= logger-conf(&quot;min-level&quot;) {
+      $print: $level + &quot; :: &quot; + $message;
+
+      // `@error` if it&#39;s an error level
+      @if index(logger-conf(&quot;errors&quot;), $level) {
+        @error #{$print};
+      }
+
+      // Else `@warn`
+      @else {
+        @warn #{$print};
+      }
+    }
+  }
+ }"
+    data-collapsed="@mixin log($level, $message) { ... }"><code>@mixin log($level, $message) { ... }</code></pre>
+
+  
+    <a href="https://github.com/HugoGiraudel/SassyLogger/tree/master/sass/_SassyLogger.scss#L57-L91" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Log a new <code>$message</code> with <code>$level</code>.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$level</code></th>
+          <td data-label="desc"><p>Message&#39;s level</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$message</code></th>
+          <td data-label="desc"><p>Message to log</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Log a new error.</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss"> @include log(&quot;ERROR&quot;, &quot;Something&#39;s wrong.&quot;);</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#mixin-logger"><code>logger</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li>
+        <a href="#function-logger-conf"><code>logger-conf</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li>
+        <a href="#mixin-logger-update-history"><code>logger-update-history</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-logger-update-history">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#mixin-logger-update-history">logger-update-history</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin logger-update-history($level, $message) { 
+  $history: logger-conf(&quot;history&quot;);
+  $current-level-history: map-get($history, $level);
+  $current-level-history: append($current-level-history, $message);
+  $logger-history: map-merge($history, ($level: $current-level-history));
+  $logger-configuration: map-merge($logger-configuration, (&quot;history&quot;: $logger-history)) !global;
+ }"
+    data-collapsed="@mixin logger-update-history($level, $message) { ... }"><code>@mixin logger-update-history($level, $message) { ... }</code></pre>
+
+  
+    <a href="https://github.com/HugoGiraudel/SassyLogger/tree/master/sass/_SassyLogger.scss#L113-L119" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Update logger history</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$level</code></th>
+          <td data-label="desc"><p>Message&#39;s level</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$message</code></th>
+          <td data-label="desc"><p>Message to log</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Update logger history with new entry</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss"> @include logger-update-history($level, $message);</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#function-logger-conf"><code>logger-conf</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-log"><code>log</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-logger-print-logs">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-logger-print-logs">logger-print-logs</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin logger-print-logs() { 
+  logger-logs {
+    @each $level, $logs in logger-conf(&quot;history&quot;) {
+      @if length($logs) &gt; 0 {
+        @each $log in $logs {
+          #{$level}: $log;
+        }
+      }
+    }
+  }
+ }"
+    data-collapsed="@mixin logger-print-logs() { ... }"><code>@mixin logger-print-logs() { ... }</code></pre>
+
+  
+    <a href="https://github.com/HugoGiraudel/SassyLogger/tree/master/sass/_SassyLogger.scss#L130-L140" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Print logger history</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Print current logs.</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss"> @include logger-print-logs;</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#function-logger-conf"><code>logger-conf</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-logger-help">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-logger-help">logger-help</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin logger-help() { 
+  logger-help {
+    OFF: &quot;Disable the logger.&quot;;
+    FATAL: &quot;Severe errors that cause premature termination.&quot;;
+    ERROR: &quot;Other runtime errors or unexpected conditions.&quot;;
+    WARN: &quot;Use of deprecated APIs, poor use of API, &#39;almost&#39; errors,&quot;
+    + &quot;other runtime situations that are undesirable or unexpected, but not necessarily wrong.&quot;;
+    INFO: &quot;Interesting runtime events (startup/shutdown).&quot;;
+    DEBUG: &quot;Detailed information on the flow through the system.&quot;;
+  }
+ }"
+    data-collapsed="@mixin logger-help() { ... }"><code>@mixin logger-help() { ... }</code></pre>
+
+  
+    <a href="https://github.com/HugoGiraudel/SassyLogger/tree/master/sass/_SassyLogger.scss#L150-L160" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Print some extra informations about logger levels and what they mean</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Print some extra help.</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss"> @include logger-help;</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+
+  
+
+
+    </div>
+
+    
+    
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+        <div class="footer__project-info  project-info">
+          <!-- Name and URL -->
+          
+            <a class="project-info__name" href="https://github.com/HugoGiraudel/SassyLogger">SassyLogger</a>
+          
+
+          <!-- Version -->
+          <span class="project-info__version"> - v0.1.0</span>
+
+          <!-- License -->
+          
+          <span class="project-info__license">, under
+            
+              MIT
+            
+            </span>
+          
+        </div>
+      
+
+      
+        <span class="footer__watermark">Built with <a href="https://github.com/SassDoc/sassdoc">SassDoc</a>.</span>
+      
+    </div>
+  </footer>
+
+
+  </article>
+
+
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="assets/js/main.min.js"></script>
+
+</body>
+</html>
