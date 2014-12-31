@@ -1,6 +1,8 @@
 SassyLogger
 ===========
 
+Read [API documentation](http://hugogiraudel.com/SassyLogger).
+
 The idea is to provide some kind of friendly API to log stuff in Sass,
 including a way to log different type of messages (warnings, errors...).
 This is obviously mainly aimed at framework and library developers.
