@@ -19,11 +19,11 @@
       "FATAL" : ()
     )
   ) !global;
-  
+
   // Cache "min-level" in the global map to improve performance
-  $logger-configuration: map-merge($logger-configuration, 
+  $logger-configuration: map-merge($logger-configuration,
     ("min-level": index(logger-conf("levels"), logger-conf("min")))
-  ) !global;  
+  ) !global;
 }
 
 
@@ -59,29 +59,29 @@
   @if not global-variable-exists("logger-configuration") {
     @include logger("INFO");
   }
-  
+
   $level: to-upper-case($level);
-  
+
   // Unless it's disabled, proceed
   @if $level != "OFF" {
     // Get current level's index
     $index-current-level: index(logger-conf("levels"), $level);
-    
+
     // If `$level` is invalid, falls back on `INFO`
     @if not $index-current-level { $level: "INFO" }
-    
+
     // Update logger history
     @include logger-update-history($level, $message);
-    
+
     // Finally, print message in console if current level is over minimum level
     @if $index-current-level >= logger-conf("min-level") {
       $print: $level + " :: " + $message;
-  
+
       // `@error` if it's an error level
       @if index(logger-conf("errors"), $level) {
         @error #{$print};
       }
-      
+
       // Else `@warn`
       @else {
         @warn #{$print};
