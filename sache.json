@@ -1,0 +1,5 @@
+{
+  "name": "SassyLogger",
+  "description": "A powerful logger to handle error and warning messages in Sass.",
+  "tags":  [ "sass", "scss", "log", "error", "warning", "css" ]
+}
