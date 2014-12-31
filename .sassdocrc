@@ -1,0 +1,10 @@
+basePath: "https://github.com/HugoGiraudel/SassyLogger/tree/master/sass"
+display:
+    access: ["public", "private"]
+    alias: false
+    watermark: true
+
+package: "./package.json"
+theme: "default"
+groups:
+    undefined: "General"
