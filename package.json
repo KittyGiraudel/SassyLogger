@@ -5,7 +5,7 @@
   "description": "A powerful logger to handle error and warning messages in Sass.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HugoGiraudel/SassyLogger"
+    "url": "https://github.com/KittyGiraudel/SassyLogger"
   },
   "keywords": [
     "sass",
@@ -15,10 +15,10 @@
     "warning",
     "css"
   ],
-  "author": "Hugo Giraudel",
+  "author": "Kitty Giraudel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HugoGiraudel/SassyLogger/issues"
+    "url": "https://github.com/KittyGiraudel/SassyLogger/issues"
   },
-  "homepage": "https://github.com/HugoGiraudel/SassyLogger"
+  "homepage": "https://github.com/KittyGiraudel/SassyLogger"
 }
