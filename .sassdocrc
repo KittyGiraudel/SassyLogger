@@ -1,4 +1,4 @@
-basePath: "https://github.com/HugoGiraudel/SassyLogger/tree/master/sass"
+basePath: "https://github.com/KittyGiraudel/SassyLogger/tree/master/sass"
 display:
     access: ["public", "private"]
     alias: false
